@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
 import { GetquestionBySlugUseCase } from './get-question-by-slug'
 import { makeQuestion } from '../../enterprise/entities/factories/make-question'
 import { Slug } from '../../enterprise/entities/value-objects/slug'
+import InMemoryQuestionsRepository from 'test/repositories/in-memory-questions-repository'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 let sut: GetquestionBySlugUseCase
