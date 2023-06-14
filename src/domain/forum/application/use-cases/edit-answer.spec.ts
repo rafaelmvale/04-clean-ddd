@@ -30,12 +30,12 @@ describe('Edit Answer', () => {
     })
 
     expect(inMemoryAnswersRepository.items[0]).toMatchObject({
-      title: 'Pergunta teste',
+      
       content: 'Conteudo teste'
     })
   })
 
-  it('should be able to edit a answer from another user', async () => {
+  it('should not be able to edit a answer from another user', async () => {
     const newAnswer = makeAnswer(
       {
         authorId: new UniqueEntityID('author-1'),
