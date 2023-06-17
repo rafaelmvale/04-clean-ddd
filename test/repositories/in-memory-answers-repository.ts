@@ -16,7 +16,7 @@ export class InMemoryAnswersRepository implements AnswersRepository {
   
   async create(answer: Answer) {
     this.items.push(answer)
-    answer
+    
   }
 
   async findManyByQuestionId(questionId: string,{page}: PaginationParams) {
