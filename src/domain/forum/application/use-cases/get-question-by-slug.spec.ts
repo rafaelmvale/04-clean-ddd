@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { GetquestionBySlugUseCase } from './get-question-by-slug'
 import { makeQuestion } from '../../enterprise/entities/factories/make-question'
 import { Slug } from '../../enterprise/entities/value-objects/slug'
@@ -15,15 +14,15 @@ describe('Get Question By SLug', () => {
 
   it('should be able to get question by slug', async () => {
     const newQuestion = makeQuestion({
-      slug: Slug.create('example-question')
+      slug: Slug.create('example-question'),
     })
-    
+
     await inMemoryQuestionsRepository.create(newQuestion)
 
-    const { question } = await sut.execute({
+    const result = await sut.execute({
       slug: 'example-question',
     })
-    expect(question.id).toBeTruthy()
-    expect(question.title).toEqual(newQuestion.title)
+    expect(result.value?.question.id).toBeTruthy()
+    expect(result.value?.question.title).toEqual(newQuestion.title)
   })
 })
