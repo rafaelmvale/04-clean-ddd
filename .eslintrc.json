@@ -4,9 +4,9 @@
     "plugin:vitest-globals/recommended"
 ], 
 "rules": {
-  "no-useless-constructor": "off", 
-  "no-unused-expressions": "off", 
-  "accessor-pairs": "off"
+  "no-useless-constructor": "off",
+  "no-new": "off"
+
 },
   "env": {
     "vitest-globals/env": true
