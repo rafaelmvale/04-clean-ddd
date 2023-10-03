@@ -1,4 +1,4 @@
-import { makeAnswer } from '@/domain/forum/enterprise/entities/factories/make-answer'
+import { makeAnswer } from 'test/factories/make-answer'
 import { OnAnswerCreated } from './on-answer-created'
 import { InMemoryAnswerAttachmentsRepository } from 'test/repositories/in-memory-answer-attachments-repository'
 import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
@@ -10,7 +10,7 @@ import {
   SendNotificationUseCaseRequest,
   SendNotificationUseCaseResponse,
 } from '../use-cases/send-notification'
-import { makeQuestion } from '@/domain/forum/enterprise/entities/factories/make-question'
+import { makeQuestion } from 'test/factories/make-question'
 import { SpyInstance } from 'vitest'
 import { waitFor } from 'test/utils/wait-for'
 

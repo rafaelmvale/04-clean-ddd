@@ -1,10 +1,10 @@
 import { DeleteQuestionUseCase } from './delete-question'
-import { makeQuestion } from '../../enterprise/entities/factories/make-question'
+import { makeQuestion } from '../../../../../test/factories/make-question'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import InMemoryQuestionsRepository from 'test/repositories/in-memory-questions-repository'
 import { NotAllowedError } from './errors/not-allowed-error'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repositories/in-memory-question-attachments-repository'
-import { makeQuestionAttachment } from '../../enterprise/entities/factories/make-question-attachments'
+import { makeQuestionAttachment } from '../../../../../test/factories/make-question-attachments'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 let inMemoryQuestionAttachmentsRepository: InMemoryQuestionAttachmentsRepository

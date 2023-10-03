@@ -12,8 +12,8 @@ import { waitFor } from 'test/utils/wait-for'
 import { OnQuestionBestAnswerChosen } from '@/domain/notification/application/subscribers/on-question-best-answer-chosen'
 import InMemoryQuestionsRepository from 'test/repositories/in-memory-questions-repository'
 import InMemoryNotificationsRepository from 'test/repositories/in-memory-notification-repository'
-import { makeQuestion } from '@/domain/forum/enterprise/entities/factories/make-question'
-import { makeAnswer } from '@/domain/forum/enterprise/entities/factories/make-answer'
+import { makeQuestion } from 'test/factories/make-question'
+import { makeAnswer } from 'test/factories/make-answer'
 
 let inMemoryQuestionAttachmentsRepository: InMemoryQuestionAttachmentsRepository
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository

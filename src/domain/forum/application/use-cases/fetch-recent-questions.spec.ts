@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { makeQuestion } from '../../enterprise/entities/factories/make-question'
+import { makeQuestion } from '../../../../../test/factories/make-question'
 import InMemoryQuestionsRepository from 'test/repositories/in-memory-questions-repository'
 import { FetchRecentQuestionsUseCase } from './fetch-recent-questions'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repositories/in-memory-question-attachments-repository'
